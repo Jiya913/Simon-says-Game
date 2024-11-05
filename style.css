@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.bth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+    border: 10px solid black;
+    background-color: #000;
+    position: relative;
+}
+
+.center {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.line-one, .line-two {
+    display: flex;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+}
+
+.yellow {
+    background-color: rgb(252, 206, 1);
+    border-top-right-radius: 100%;
+}
+
+.red {
+    background-color: red;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.purple {
+    background-color: skyblue;
+    border-bottom-right-radius: 100%;
+}
+
+.flash{
+    background-color: #fff;
+}
+
+.userflash{
+    background-color:violet;
+}
+
+.btn.flash {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.btn.userflash {
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
